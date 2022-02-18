@@ -5,12 +5,32 @@
   <meta charset="utf-8">
   <!-- CSS 언어 첫 등장 -->
   <style>
+    body {
+      margin:0px;
+    }
     a {
       color:black;
       text-decoration: none;
     }
     h1 {
       text-align:center;
+      border-bottom:3px solid black;
+      margin:0px;
+      padding:20px;
+    }
+    #grid {
+      display:grid;
+      grid-template-columns: 250px 1fr;
+    }
+    #grid ol {
+      border-right:1.5px solid black;
+      width:150px;
+      margin:0px;
+      padding-left:40px;
+      padding-top:20px;
+    }
+    #image {
+      padding-left:150px;
     }
   </style>
   <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -26,11 +46,12 @@
 
 <body>
   <h1><a href="index.html">CHERRY SWITCH</a></h1>
-  <ol>
-    <li><a href="1.html">CHERRY BLUE</a></li>
-    <li><a href="2.html">CHERRY BROWN</a></li>
-    <li><a href="3.html">CHERRY RED</a></li>
-  </ol>
+  <div id="grid">
+    <ol>
+      <li><a href="1.html">CHERRY BLUE</a></li>
+      <li><a href="2.html">CHERRY BROWN</a></li>
+      <li><a href="3.html">CHERRY RED</a></li>
+    </ol>
 <!--
   <ol>
     <li><a href="1.html"><font color="blue">CHERRY BLUE</font></a></li>
@@ -38,9 +59,10 @@
     <li><a href="3.html"><font color="red">CHERRY RED</font></a></li>
   </ol>
 -->
-  <p style="margin : 50px"></p>
-
+    <div id="image">
   <img src="Cherry switches.png" width="1000px">
+    </div>
+  </div>
   <p style="margin : 30px"></p>
   <h2>THE MX SWITCH IN DETAIL</h2>
   <p style="margin : 30px"></p>
