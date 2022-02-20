@@ -1,0 +1,39 @@
+body {
+  margin:0px;
+}
+a {
+  color:black;
+  text-decoration: none;
+}
+h1 {
+  text-align: center;
+  border-bottom:3px solid black;
+  margin:0px;
+  padding:20px;
+}
+#grid ol {
+  border-right:1.5px solid black;
+  width:150px;
+  margin:0px;
+  padding-left:40px;
+  padding-top:20px;
+}
+#article {
+  padding-left: 25px;
+}
+#grid {
+  display:grid;
+  grid-template-columns: 200px 1fr;
+}
+.saw {
+  color:maroon;
+}
+@media(max-width:800px) {
+  #grid {
+    display:block;
+  }
+  #grid ol {
+    display:block;
+    border-right:none;
+  }
+}

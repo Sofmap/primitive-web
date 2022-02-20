@@ -5,50 +5,7 @@
   <!-- title이란 태그로 웹페이지의 제목을 정할 수 있다. 검색엔진 최적화 기능 -->
   <meta charset="utf-8">
   <!-- 웹 페이지를 uft-8로 인코딩하라고 정해주는 기능(한글이 깨질 경우) -->
-  <style>
-    body {
-      margin:0px;
-    }
-    a {
-      color:black;
-      text-decoration: none;
-    }
-    h1 {
-      text-align: center;
-      border-bottom:3px solid black;
-      margin:0px;
-      padding:20px;
-    }
-    #grid ol {
-      border-right:1.5px solid black;
-      width:150px;
-      margin:0px;
-      padding-left:40px;
-      padding-top:20px;
-    }
-    #article {
-      padding-left: 25px;
-    }
-    #grid {
-      display:grid;
-      grid-template-columns: 200px 1fr;
-    }
-    #blue {
-      color:red;
-    }
-    .saw {
-      color:maroon;
-    }
-    @media(max-width:800px) {
-      #grid {
-        display:block;
-      }
-      #grid ol {
-        display:block;
-        border-right:none;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">  <!--rel=relation, style.css를  불러오라는 링크-->
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-L22Y74WJKL"></script>
   <script>
@@ -64,7 +21,7 @@
   <h1><a href="index.html">CHERRY SWITCH</a></h1>
   <div id="grid">
     <ol>
-      <li><a href="1.html" id="blue">CHERRY BLUE</a></li>
+      <li><a href="1.html" style="color:red">CHERRY BLUE</a></li>
       <li><a href="2.html" class="saw">CHERRY BROWN</a></li>
       <li><a href="3.html" class="saw">CHERRY RED</a></li>
     </ol>
