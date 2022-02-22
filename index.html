@@ -29,6 +29,20 @@
       padding-left:40px;
       padding-top:20px;
     }
+    #button1 {
+      position:absolute;
+      top:30px;
+      right:30px;
+      width:70px;
+      height:25px;
+    }
+    #search1 {
+      position:absolute;
+      top:30px;
+      right:110px;
+      width:120px;
+      height:20px;
+    }
     @media(max-width:800px) {
       #grid {
         display:block;
@@ -40,8 +54,18 @@
         padding:10px;
         width:100%;
       }
+      #button1 {
+        position:absolute;
+        top:90px;
+        right:0px;
+      }
+      #search1 {
+        position:absolute;
+        top:90px;
+        right:80px;
+      }
     }
-  </style>
+    </style>
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-L22Y74WJKL"></script>
   <script>
@@ -55,6 +79,8 @@
 
 <body>
   <h1><a href="index.html">CHERRY SWITCH</a></h1>
+      <input id="search1" type="text">
+      <input id="button1" type="button" value="Search" onclick="alert('Search Complete')">
   <div id="grid">
     <ol>
       <li><a href="1.html">CHERRY BLUE</a></li>
