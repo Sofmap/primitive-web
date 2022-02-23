@@ -25,6 +25,16 @@ h1 {
   display:grid;
   grid-template-columns: 200px 1fr;
 }
+#night {
+  position: absolute;
+  left:50px;
+  top:30px;
+}
+#day {
+  position: absolute;
+  left : 10px;
+  top:30px;
+}
 #scroll_test {
   display:block;
 }
