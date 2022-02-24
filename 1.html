@@ -20,12 +20,24 @@
 <body>
   <a href="https://www.youtube.com/channel/UCwEXgvkOVPs7mm0eqe0k0ZQ/featured" target="_blank" title="키니버스 채널"><img src="Keyniverse_Channel.png" style="position:fixed; width:180px; bottom:20px;; left:0px;"></a>
   <h1><a href="index.html">CHERRY SWITCH</a></h1>
-  <input id="night" type="button" value="night" onclick="
+  <!-- 각 2개의 버튼에 기능부여 -->
+  <!-- <input id="night" type="button" value="night" onclick="
   document.querySelector('body').style.backgroundColor='black';
   document.querySelector('body').style.color='white';">
   <input id="day" type="button" value="day" onclick="
   document.querySelector('body').style.backgroundColor='white';
-  document.querySelector('body').style.color='black';">
+  document.querySelector('body').style.color='black';"> -->
+  <!-- 한 개의 버튼에 조건문을 사용하여 기능 부여 -->
+  <input id="night_day" type="button" value="night" onclick="
+  if (document.querySelector('#night_day').value === 'night') {
+  document.querySelector('body').style.backgroundColor='black';
+  document.querySelector('body').style.color='white';
+  document.querySelector('#night_day').value = 'day'}
+  else {
+  document.querySelector('body').style.backgroundColor='white';
+  document.querySelector('body').style.color='black';
+  document.querySelector('#night_day').value = 'night'}
+  ">
   <div id="grid">
     <ol>
       <li><a href="1.html" style="color:red">CHERRY BLUE</a></li>
@@ -55,6 +67,18 @@
     <iframe width="560" height="315" src="https://www.youtube.com/embed/fEi8ZjfYa9E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </p>
   <div id="scroll_test" style="border:solid 5px black; height:1500px;">SCROLL TEST</div>
+  <!-- 코드의 중복 제거 밑 최적화 -->
+  <input type="button" value="night" onclick="
+  var target=document.querySelector('body');
+  if (this.value === 'night') {
+  target.style.backgroundColor='black';
+  target.style.color='white';
+  this.value = 'day'}
+  else {
+  target.style.backgroundColor='white';
+  target.style.color='black';
+  this.value = 'night'}
+  ">
     </div>
   </div>
   <p>
