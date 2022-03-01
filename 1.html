@@ -7,6 +7,35 @@
   <!-- 웹 페이지를 uft-8로 인코딩하라고 정해주는 기능(한글이 깨질 경우) -->
   <link rel="stylesheet" href="style.css">  <!--rel=relation, style.css를  불러오라는 링크-->
   <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script>
+  function nightdayhandler (self) {
+    var target=document.querySelector('body');
+    if(self.value === 'night') {
+      target.style.backgroundColor='black';
+      target.style.color='white';
+      self.value = 'day'
+
+      var alist = document.querySelectorAll('a');
+      var i = 0;
+      while(i <  alist.length) {
+        alist[i].style.color='powderblue';
+        i = i + 1;
+      }
+    }
+    else {
+      target.style.backgroundColor='white';
+      target.style.color='black';
+      self.value = 'night'
+
+      var alist = document.querySelectorAll('a');
+      var i = 0;
+      while(i <  alist.length) {
+        alist[i].style.color='black';
+        i = i + 1;
+      }
+    }
+  }
+  </script>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-L22Y74WJKL"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -30,31 +59,7 @@
   <!-- 한 개의 버튼에 조건문을 사용하여 두 개의 기능 부여 -->
   <!-- 조건문과 반복문을 활용하여 밤낮 버튼에 a태그가 붙은 엘리먼트들의 색상 변경 -->
   <input id="night_day" type="button" value="night" onclick="
-    var target=document.querySelector('body');
-    if(this.value === 'night') {
-      target.style.backgroundColor='black';
-      target.style.color='white';
-      this.value = 'day'
-
-      var alist = document.querySelectorAll('a');
-      var i = 0;
-      while(i <  alist.length) {
-        alist[i].style.color='powderblue';
-        i = i + 1;
-      }
-    }
-    else {
-      target.style.backgroundColor='white';
-      target.style.color='black';
-      this.value = 'night'
-
-      var alist = document.querySelectorAll('a');
-      var i = 0;
-      while(i <  alist.length) {
-        alist[i].style.color='black';
-        i = i + 1;
-      }
-    }
+    nightdayhandler(this);
   ">
   <!-- var alist = document.querySelectorAll('a')
   var i = 0;
