@@ -36,4 +36,3 @@ function nightdayhandler (self) {
 
     Links.setColor('black')
   }
-}
