@@ -5,6 +5,8 @@
   <meta charset="utf-8">
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="colors.js"></script>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-L22Y74WJKL"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -18,6 +20,9 @@
 <body>
   <a href="https://www.youtube.com/channel/UCwEXgvkOVPs7mm0eqe0k0ZQ/featured" target="_blank" title="키니버스 채널"><img src="Keyniverse_Channel.png" style="position:fixed; width:180px; bottom:20px;; left:0px;"></a>
   <h1><a href="index.html">CHERRY SWITCH</a></h1>
+  <input id="night_day" type="button" value="night" onclick="
+    nightdayhandler(this);
+  ">
   <div id="grid">
     <ol>
       <li><a href="1.html" class="saw">CHERRY BLUE</a></li>

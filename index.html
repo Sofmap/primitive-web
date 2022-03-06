@@ -3,69 +3,10 @@
 <head>
   <title>Keyniverse</title>
   <meta charset="utf-8">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <!-- CSS 언어 첫 등장 -->
-  <style>
-    body {
-      margin:0px;
-    }
-    a {
-      color:black;
-      text-decoration: none;
-    }
-    h1 {
-      text-align:center;
-      border-bottom:3px solid black;
-      margin:0px;
-      padding:20px;
-    }
-    #grid {
-      display:grid;
-      grid-template-columns: 250px 1fr;
-    }
-    #grid ol {
-      border-right:1.5px solid black;
-      width:150px;
-      margin:0px;
-      padding-left:40px;
-      padding-top:20px;
-    }
-    #button1 {
-      position:absolute;
-      top:30px;
-      right:30px;
-      width:70px;
-      height:25px;
-    }
-    #search1 {
-      position:absolute;
-      top:30px;
-      right:110px;
-      width:120px;
-      height:20px;
-    }
-    @media(max-width:800px) {
-      #grid {
-        display:block;
-      }
-      #grid ol {
-        border-right:none;
-      }
-      img {
-        padding-left:10px;
-        width:100%;
-      }
-      #button1 {
-        position:absolute;
-        top:90px;
-        right:0px;
-      }
-      #search1 {
-        position:absolute;
-        top:90px;
-        right:80px;
-      }
-    }
-    </style>
+  <link rel="stylesheet" href="Homepage_style.css">
+  <script src="colors.js"></script>
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-L22Y74WJKL"></script>
   <script>
@@ -79,8 +20,11 @@
 
 <body>
   <h1><a href="index.html">CHERRY SWITCH</a></h1>
-      <input id="search1" type="text">
-      <input id="button1" type="button" value="Search" onclick="alert('Search Complete')">
+  <input id="night_day" type="button" value="night" onclick="
+    nightdayhandler(this);
+  ">
+  <input id="search1" type="text">
+  <input id="button1" type="button" value="Search" onclick="alert('Search Complete')">
   <div id="grid">
     <ol>
       <li><a href="1.html">CHERRY BLUE</a></li>
