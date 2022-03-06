@@ -13,7 +13,7 @@ h1 {
 }
 #grid {
   display:grid;
-  grid-template-columns: 250px 1fr;
+  grid-template-columns: 200px 1fr;
 }
 #grid ol {
   border-right:1.5px solid black;
@@ -63,4 +63,3 @@ h1 {
     top:90px;
     right:80px;
   }
-}

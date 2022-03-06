@@ -1,49 +1,14 @@
 <!doctype html>
 <html>
 <head>
-  <title>Cherry MX Blue Switch</title>
   <!-- title이란 태그로 웹페이지의 제목을 정할 수 있다. 검색엔진 최적화 기능 -->
-  <meta charset="utf-8">
+  <title>Cherry MX Blue Switch</title>
   <!-- 웹 페이지를 uft-8로 인코딩하라고 정해주는 기능(한글이 깨질 경우) -->
+  <meta charset="utf-8">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <link rel="stylesheet" href="style.css">  <!--rel=relation, style.css를  불러오라는 링크-->
+  <script src="colors.js"></script>
   <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script>
-  var Links = {
-    setColor : function LinksSetColor(color) {
-      var alist = document.querySelectorAll('a');
-      var i = 0;
-      while(i <  alist.length) {
-        alist[i].style.color = color;
-        i = i + 1;
-      }
-    }
-  }
-  var Body = {
-    setColor : function(color) {
-      document.querySelector('body').style.color = color;
-    },
-    setBackgroundColor : function(color) {
-      document.querySelector('body').style.backgroundColor = color;
-    }
-  }
-  function nightdayhandler (self) {
-    var target = document.querySelector('body');
-    if(self.value === 'night') {
-      Body.setBackgroundColor('black');
-      Body.setColor('white');
-      self.value = 'day';
-
-      Links.setColor('powderblue')
-    }
-    else {
-      Body.setBackgroundColor('white');
-      Body.setColor('black');
-      self.value = 'night'
-
-      Links.setColor('black')
-    }
-  }
-  </script>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-L22Y74WJKL"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -103,7 +68,7 @@
   <p>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/fEi8ZjfYa9E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </p>
-  <div id="scroll_test" style="border:solid 5px black; height:1500px;">SCROLL TEST</div>
+  <div id="scroll_test" style="border:solid 5px black; height:1500px; width:1000px;">SCROLL TEST</div>
     </div>
   </div>
   <p>

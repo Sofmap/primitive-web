@@ -6,10 +6,14 @@ a {
   text-decoration: none;
 }
 h1 {
-  text-align: center;
+  text-align:center;
   border-bottom:3px solid black;
   margin:0px;
   padding:20px;
+}
+#grid {
+  display:grid;
+  grid-template-columns: 200px 1fr;
 }
 #grid ol {
   border-right:1.5px solid black;
@@ -20,10 +24,6 @@ h1 {
 }
 #article {
   padding-left: 25px;
-}
-#grid {
-  display:grid;
-  grid-template-columns: 200px 1fr;
 }
 /* #night {
   position: absolute;
