@@ -20,7 +20,7 @@ var Body = {
     $('body').css('backgroundColor', color);
   }
 }
-function nightdayhandler (self) {
+function nightdayhandler(self) {
   var target = document.querySelector('body');
   if(self.value === 'night') {
     Body.setBackgroundColor('black');
