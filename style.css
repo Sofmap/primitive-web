@@ -44,9 +44,6 @@ h1 {
 #scroll_test {
   display:block;
 }
-.saw {
-  color:maroon;
-}
 @media(max-width:800px) {
   #grid {
     display:block;

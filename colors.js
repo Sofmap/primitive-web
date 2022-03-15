@@ -1,11 +1,11 @@
 var Links = {
   setColor : function LinksSetColor(color) {
-    var alist = document.querySelectorAll('a');
-    var i = 0;
-    while(i <  alist.length) {
-      alist[i].style.color = color;
-      i = i + 1;
-    }
+  //   var alist = document.querySelectorAll('a');
+  //   var i = 0;
+  //   while(i <  alist.length) {
+  //     alist[i].style.color = color;
+  //     i = i + 1;
+  //   }
     // jQuery에서 css를 불러옴
     $('a').css('color', color);
   }
